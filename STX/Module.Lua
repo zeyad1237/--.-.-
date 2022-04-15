@@ -10,7 +10,6 @@ function Nofitication:Nof(nofdebug, middledebug, all)
     local WindowDescription = Instance.new("TextLabel")
     
     ambientShadow.Name = "ambientShadow"
-    ambientShadow.Parent = GUI
     if not GUI then
         local STX_Nofitication = Instance.new("ScreenGui")
         local STX_NofiticationUIListLayout = Instance.new("UIListLayout")
@@ -25,7 +24,7 @@ function Nofitication:Nof(nofdebug, middledebug, all)
         STX_NofiticationUIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
         STX_NofiticationUIListLayout.VerticalAlignment = Enum.VerticalAlignment.Bottom
 
-        ambientShadow.Parent = GUI
+        ambientShadow.Parent = STX_Nofitication
     else
         ambientShadow.Parent = GUI
     end

@@ -148,6 +148,7 @@ function Nofitication:Nof(nofdebug, middledebug, all)
         local function ORBHB_fake_script()
             local script = Instance.new('LocalScript', ambientShadow)
         
+            local Stilthere = true
             local function Unchecked()
                 pcall(function()
                     all.Callback(false)
@@ -156,6 +157,7 @@ function Nofitication:Nof(nofdebug, middledebug, all)
                 
                 wait(0.2)
                 ambientShadow:Destroy()
+                Stilthere = false
             end
             local function Checked()
                 pcall(function()
@@ -165,6 +167,7 @@ function Nofitication:Nof(nofdebug, middledebug, all)
                 
                 wait(0.2)
                 ambientShadow:Destroy()
+                Stilthere = false
             end
             Uncheck.MouseButton1Click:Connect(Unchecked)
             Check.MouseButton1Click:Connect(Checked)
@@ -172,11 +175,14 @@ function Nofitication:Nof(nofdebug, middledebug, all)
             Outline_A:TweenSize(UDim2.new(0, 0, 0, 2), "Out", "Linear", middledebug.Time)
     
             wait(middledebug.Time)
+
+            if Stilthere == true then
         
-            ambientShadow:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", 0.2)
-            
-            wait(0.2)
-            ambientShadow:Destroy()
+                ambientShadow:TweenSize(UDim2.new(0, 0, 0, 0), "Out", "Linear", 0.2)
+                
+                wait(0.2)
+                ambientShadow:Destroy()
+            end
         end
         coroutine.wrap(ORBHB_fake_script)()
     end

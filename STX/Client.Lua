@@ -14,7 +14,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     ambientShadow.AnchorPoint = Vector2.new(0.5, 0.5)
     ambientShadow.BackgroundTransparency = 1.000
     ambientShadow.BorderSizePixel = 0
-    ambientShadow.Position = UDim2.new(0.5, 0, 0, 0)
+    ambientShadow.Position = UDim2.new(0.91525954, 0, 0.936809778, 0)
     ambientShadow.Size = UDim2.new(0, 0, 0, 0)
     ambientShadow.Image = "rbxassetid://1316045217"
     ambientShadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
@@ -26,7 +26,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.Parent = ambientShadow
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
-    Window.Position = UDim2.new(0.5, 0, 0, 0)
+    Window.Position = UDim2.new(0, 5, 0, 5)
     Window.Size = UDim2.new(0, 230, 0, 80)
     Window.ZIndex = 2
     
@@ -34,7 +34,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Outline_A.Parent = Window
     Outline_A.BackgroundColor3 = middledebug.OutlineColor
     Outline_A.BorderSizePixel = 0
-    Outline_A.Position = UDim2.new(0.5, 0, 0, 0)
+    Outline_A.Position = UDim2.new(0, 0, 0, 25)
     Outline_A.Size = UDim2.new(0, 230, 0, 2)
     Outline_A.ZIndex = 5
     
@@ -44,7 +44,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowTitle.BackgroundTransparency = 1.000
     WindowTitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WindowTitle.BorderSizePixel = 0
-    WindowTitle.Position = UDim2.new(0.5, 0, 0, 0)
+    WindowTitle.Position = UDim2.new(0, 8, 0, 2)
     WindowTitle.Size = UDim2.new(0, 222, 0, 22)
     WindowTitle.ZIndex = 4
     WindowTitle.Font = Enum.Font.GothamSemibold
@@ -59,7 +59,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowDescription.BackgroundTransparency = 1.000
     WindowDescription.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WindowDescription.BorderSizePixel = 0
-    WindowDescription.Position = UDim2.new(0.5, 0, 0, 0)
+    WindowDescription.Position = UDim2.new(0, 8, 0, 34)
     WindowDescription.Size = UDim2.new(0, 216, 0, 40)
     WindowDescription.ZIndex = 4
     WindowDescription.Font = Enum.Font.GothamSemibold
@@ -89,13 +89,13 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     elseif SelectedType == "image" then
         ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
         Window.Size = UDim2.new(0, 230, 0, 80)
-        WindowTitle.Position = UDim2.new(0.5, 0, 0, 0)
+        WindowTitle.Position = UDim2.new(0, 24, 0, 2)
         local ImageButton = Instance.new("ImageButton")
         ImageButton.Parent = Window
         ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         ImageButton.BackgroundTransparency = 1.000
         ImageButton.BorderSizePixel = 0
-        ImageButton.Position = UDim2.new(0.5, 0, 0, 0)
+        ImageButton.Position = UDim2.new(0, 4, 0, 4)
         ImageButton.Size = UDim2.new(0, 18, 0, 18)
         ImageButton.ZIndex = 5
         ImageButton.AutoButtonColor = false
@@ -126,7 +126,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         Uncheck.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Uncheck.BackgroundTransparency = 1.000
         Uncheck.BorderSizePixel = 0
-        Uncheck.Position = UDim2.new(0.5, 0, 0, 0)
+        Uncheck.Position = UDim2.new(0, 7, 0, 76)
         Uncheck.Size = UDim2.new(0, 18, 0, 18)
         Uncheck.ZIndex = 5
         Uncheck.AutoButtonColor = false
@@ -138,7 +138,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         Check.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Check.BackgroundTransparency = 1.000
         Check.BorderSizePixel = 0
-        Check.Position = UDim2.new(0.5, 0, 0, 0)
+        Check.Position = UDim2.new(0, 28, 0, 76)
         Check.Size = UDim2.new(0, 18, 0, 18)
         Check.ZIndex = 5
         Check.AutoButtonColor = false

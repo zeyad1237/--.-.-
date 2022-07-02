@@ -34,7 +34,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Outline_A.Parent = Window
     Outline_A.BackgroundColor3 = middledebug.OutlineColor
     Outline_A.BorderSizePixel = 0
-    Outline_A.Position = UDim2.new(0, 0, 0, 25)
+    Outline_A.Position = UDim2.new(0.5, 0, 0, 0)
     Outline_A.Size = UDim2.new(0, 230, 0, 2)
     Outline_A.ZIndex = 5
     
@@ -89,7 +89,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     elseif SelectedType == "image" then
         ambientShadow:TweenSize(UDim2.new(0, 240, 0, 90), "Out", "Linear", 0.2)
         Window.Size = UDim2.new(0, 230, 0, 80)
-        WindowTitle.Position = UDim2.new(0, 24, 0, 2)
+        WindowTitle.Position = UDim2.new(0.5, 0, 0, 0)
         local ImageButton = Instance.new("ImageButton")
         ImageButton.Parent = Window
         ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -138,7 +138,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         Check.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Check.BackgroundTransparency = 1.000
         Check.BorderSizePixel = 0
-        Check.Position = UDim2.new(0, 28, 0, 76)
+        Check.Position = UDim2.new(0.5, 0, 0, 0)
         Check.Size = UDim2.new(0, 18, 0, 18)
         Check.ZIndex = 5
         Check.AutoButtonColor = false

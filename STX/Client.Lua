@@ -26,7 +26,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     Window.Parent = ambientShadow
     Window.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
     Window.BorderSizePixel = 0
-    Window.Position = UDim2.new(0, 5, 0, 5)
+    Window.Position = UDim2.new(0.5, 0, 0, 0)
     Window.Size = UDim2.new(0, 230, 0, 80)
     Window.ZIndex = 2
     
@@ -44,7 +44,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowTitle.BackgroundTransparency = 1.000
     WindowTitle.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WindowTitle.BorderSizePixel = 0
-    WindowTitle.Position = UDim2.new(0, 8, 0, 2)
+    WindowTitle.Position = UDim2.new(0.5, 0, 0, 0)
     WindowTitle.Size = UDim2.new(0, 222, 0, 22)
     WindowTitle.ZIndex = 4
     WindowTitle.Font = Enum.Font.GothamSemibold
@@ -59,7 +59,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
     WindowDescription.BackgroundTransparency = 1.000
     WindowDescription.BorderColor3 = Color3.fromRGB(27, 42, 53)
     WindowDescription.BorderSizePixel = 0
-    WindowDescription.Position = UDim2.new(0, 8, 0, 34)
+    WindowDescription.Position = UDim2.new(0.5, 0, 0, 0)
     WindowDescription.Size = UDim2.new(0, 216, 0, 40)
     WindowDescription.ZIndex = 4
     WindowDescription.Font = Enum.Font.GothamSemibold
@@ -95,7 +95,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         ImageButton.BackgroundTransparency = 1.000
         ImageButton.BorderSizePixel = 0
-        ImageButton.Position = UDim2.new(0, 4, 0, 4)
+        ImageButton.Position = UDim2.new(0.5, 0, 0, 0)
         ImageButton.Size = UDim2.new(0, 18, 0, 18)
         ImageButton.ZIndex = 5
         ImageButton.AutoButtonColor = false
@@ -126,7 +126,7 @@ function Nofitication:Notify(nofdebug, middledebug, all)
         Uncheck.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Uncheck.BackgroundTransparency = 1.000
         Uncheck.BorderSizePixel = 0
-        Uncheck.Position = UDim2.new(0, 7, 0, 76)
+        Uncheck.Position = UDim2.new(0.5, 0, 0, 0)
         Uncheck.Size = UDim2.new(0, 18, 0, 18)
         Uncheck.ZIndex = 5
         Uncheck.AutoButtonColor = false
